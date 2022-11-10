@@ -1,7 +1,7 @@
 <p align="center">
   <b>simplefetch, a simple system information tool. </b><br>
   <br><br>
-  <img src="https://github.com/omxr4216/simplefetch/blob/main/asset.png?raw=true">
+  <img src="https://github.com/omxr4216/simplefetch/blob/main/assets/asset.png?raw=true">
 </p>
 
 simplefetch is a simple system information tool written in C++.
