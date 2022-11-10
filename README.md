@@ -8,7 +8,7 @@ simplefetch (gonna be renamed to sfetch) is a simple and minimal system informat
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
-###simplefetch is being renamed to sfetch. as you launch the gui installer it still says simplefetch
+### simplefetch is being renamed to sfetch. as you launch the gui installer it still says simplefetch
 
 ## Install
 Clone this repo.
