@@ -26,10 +26,4 @@ sudo make install
 sudo make gui
 ```
 
-ASCII logos are only from [ufetch](https://gitlab.com/jschx/ufetch)
-
-Other Files:
-
-.dialog.sh - for `make gui`
-
-simplefetch.cpp - simplefetch C++ code
+ASCII logos are from [ufetch](https://gitlab.com/jschx/ufetch)
