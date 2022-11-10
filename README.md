@@ -4,7 +4,7 @@
   <img src="https://github.com/omxr4216/simplefetch/blob/main/assets/asset.png?raw=true">
 </p>
 
-simplefetch is a simple system information tool written in C++.
+simplefetch is a simple and minimal system information tool written in C++.
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
