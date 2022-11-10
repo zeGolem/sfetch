@@ -8,10 +8,10 @@ simplefetch (aka sfetch) is a simple and minimal system information tool written
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
-### simplefetch is being renamed to sfetch. the c++ filename is still simplefetch as you launch the gui installer it still says simplefetch
+### simplefetch is being renamed to sfetch. the optional tar.xz file is still simplefetch. the c++ filename is still simplefetch. and as you launch the gui installer it still says simplefetch.
 
 ## Install
-Clone this repo.
+Clone this repo. (or download the .tar.xz file from releases)
 ```
 git clone https://github.com/omxr4216/sfetch
 ```
