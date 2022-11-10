@@ -5,6 +5,7 @@
 </p>
 
 simplefetch is a simple system information tool written in C++.
+
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
 ## Install
@@ -24,3 +25,11 @@ sudo make install
 ```
 sudo make gui
 ```
+
+ASCII logos are only from [ufetch](https://gitlab.com/jschx/ufetch)
+
+Other Files:
+
+.dialog.sh - for `make gui`
+
+simplefetch.cpp - simplefetch C++ code
