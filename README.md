@@ -1,5 +1,5 @@
 <p align="center">
-  <b>simplefetch, a simple system information tool. </b><br>
+  <b>simplefetch, a simple and minimal system information tool. </b><br>
   <br><br>
   <img src="https://github.com/omxr4216/simplefetch/blob/main/assets/asset.png?raw=true">
 </p>
