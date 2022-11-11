@@ -6,7 +6,6 @@
 
 for the next release v1.1.0
 - [X] Modify chkversion.sh to make sfetch-update output: "New update is available!"
-- [ ] Add more colors
 - [ ] Create patch files (instead of having to copy new code to custom config file)
 - [ ] Make sfetch support BSD/Unix and their ascii systems (if possible)
 
