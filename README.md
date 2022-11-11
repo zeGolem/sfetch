@@ -1,7 +1,7 @@
 <p align="center">
   <b>sfetch. a simple and minimal system information tool.</b><br>
   <br><br>
-<img src="https://github.com/omxr4216/sfetch/blob/main/ss.png?raw=true">
+<img src="https://github.com/omxr4216/sfetch/blob/main/screenshot.png?raw=true">
 </p>
 
 
