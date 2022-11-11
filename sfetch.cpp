@@ -59,10 +59,13 @@ int main() {
             std::cout << "" << u.nodename;
             std::cout << "\n";
             std::cout << "OS: ";
-            FILE *fp;
-            char path[1035];
-            fp = popen("/usr/bin/lsb_release --short -d", "r");
-            pclose(fp);
+            std::string getOsName()
+	    {
+		#elif __linux__
+    		return "Linux";
+		#elif __unix || __unix__
+    		return "Unix";
+
 	// print version, time/date, shell , terminal, and the colors
             std::cout << "\n";
             std::cout << "Version: " << u.release;
