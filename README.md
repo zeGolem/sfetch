@@ -13,6 +13,8 @@ sfetch is a simple and minimal system information tool written in `C++`.
 
 You can get the source code by downloading the tar.xz archive or using `git clone` command.
 
+NOTE: it's better to run `git clone` because the tar.xz archive might have things that are not in the code or the app doesn't match the ss
+
 ## Update
 To check for updates for sfetch run this command:
 ```
