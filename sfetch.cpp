@@ -53,43 +53,48 @@ int main() {
 
             char username[MAX_USERID_LENGTH];
             cuserid(username);
-            printf("%s", username);
-            printf("@%s", u.nodename);
-            printf("\n");
-            printf("OS: ", u.sysname);
+            std::cout << " " << username;
+            std::cout << "@" << u.nodename;
+            std::cout << "\n";
+            std::cout << "OS: " << u.sysname;
             FILE *fp;
             char path[1035];
             fp = popen("/usr/bin/lsb_release --short -d", "r");
             if (fp == NULL) {
-            printf("???\n" );
+            std::cout << " " << '\n';
             exit(1);
 }
             while (fgets(path, sizeof(path), fp) != NULL) {
-            printf("%s", path);
+            std::cout << " ", path;
 }
 
             pclose(fp);
 	// print version, time/date, shell , terminal, and the colors
-            printf("Version: %s \n", u.release);
-            printf("Time/Date: ");
+            std::cout << "\n";
+            std::cout << "Version: " << u.release;
+            std::cout << "\n";
+            std::cout << "Time/Date: ";
             std::time_t result = std::time(nullptr);
             std::cout << std::asctime(std::localtime(&result));
-            printf("Platform: %s \n", u.machine);
+            std::cout << "Platform: " << u.machine;
             char*shell = getenv("SHELL");
-            printf("Shell: %s\n", shell);
-	        char*term = getenv("TERM");
-	        printf("Terminal: %s\n", term);
+            std::cout << "\n";
+            std::cout << "Shell: " << shell;
+            char*term = getenv("TERM");
+	    std::cout << "\n";
+            std::cout << "Terminal: " << term;
+            std::cout << "\n";
             char*desktop = getenv("DESKTOP_SESSION");
-            printf("Desktop: %s\n", desktop);
-            printf("\n");
-            printf("%s██", KRED);
-            printf("%s██", KYEL);
-            printf("%s██", KGRN);
-            printf("%s██", KBLU);
-            printf("%s██", KCYN);
-            printf("%s██", KMAG);
-            printf("%s██", KWHT);
-            printf("%s██\n", KNRM);
+            std::cout << "Desktop: " << desktop;
+            std::cout << "\n";
+            std::cout << "██" << KRED;
+            std::cout << "██" << KYEL;
+            std::cout << "██" << KGRN;
+            std::cout << "██" << KBLU;
+            std::cout << "██" << KCYN;
+            std::cout << "██" << KMAG;
+            std::cout << "██" << KWHT;
+            std::cout << "██\n" << KNRM;
 	// exits simplefetch
             return 0;
 }
