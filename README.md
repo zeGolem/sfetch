@@ -8,6 +8,7 @@ for the next release v1.1.0
 - [X] Modify chkversion.sh to make sfetch-update output: "New update is available!"
 - [ ] Create patch files (instead of having to copy new code to custom config file)
 - [ ] Make sfetch support BSD/Unix and their ascii systems (if possible)
+- [ ] Pipe it to cowsay
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
 There's no binary file included that runs for every single distro so the "OS: " just prints "Linux"
