@@ -89,6 +89,7 @@ int main() {
             char*desktop = getenv("DESKTOP_SESSION");
             std::cout << "Desktop: " << desktop;
             std::cout << "\n";
+	    std::cout << "\n";
             std::cout << "██" << KRED;
             std::cout << "██" << KYEL;
             std::cout << "██" << KGRN;
@@ -97,6 +98,7 @@ int main() {
             std::cout << "██" << KMAG;
             std::cout << "██" << KWHT;
             std::cout << "██\n" << KNRM;
+	    std::cout << "\n";
 	// exits simplefetch
             return 0;
 }
