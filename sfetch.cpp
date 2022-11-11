@@ -40,13 +40,13 @@ int main() {
 	std::ios_base::sync_with_stdio(false);
 	// print ascii logo
         std::cout << R"(
-                  ___
-                 (.. \
-                 (<> |
-                //  \ \
-               ( |  | /|
-              _/\ __)/_)
-              \/-____\/
+                  ___	      
+	         (.. \	      
+                 (<> |	      
+                //  \ \	      
+               ( |  | /|      
+              _/\ __)/_)      
+              \/-____\/	      
         )" << '\n';
 	// print username,nodename (aka hostname), os name (man it's really big)
 	    struct utsname u;
@@ -55,10 +55,9 @@ int main() {
 
             char username[MAX_USERID_LENGTH];
             cuserid(username);
-            std::cout << "" << username;
-            std::cout << "@" << u.nodename;
+            std::cout << "sfetch@sfetch";
             std::cout << "\n";
-            std::cout << "OS: ";
+            std::cout << "OS: " << u.sysname;
             FILE *fp;
             char path[1035];
             fp = popen("/usr/bin/lsb_release --short -d", "r");
