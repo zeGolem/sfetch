@@ -62,14 +62,6 @@ int main() {
             FILE *fp;
             char path[1035];
             fp = popen("/usr/bin/lsb_release --short -d", "r");
-            if (fp == NULL) {
-            std::cout << "" << '\n';
-            exit(1);
-}
-            while (fgets(path, sizeof(path), fp) != NULL) {
-            std::cout << "", path;
-}
-
             pclose(fp);
 	// print version, time/date, shell , terminal, and the colors
             std::cout << "\n";
