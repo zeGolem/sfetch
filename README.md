@@ -7,7 +7,7 @@
 
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
-There's no binary file included that runs for every single distro so the "OS: " might print "Linux" or the desc of the OS witch is maybe the name of the OS.
+There's no binary file included that runs for every single distro so the "OS: " might print "Linux" or the desc of the OS which is maybe the name of the OS.
 
 sfetch is a simple and minimal system information tool written in `C++`.
 
