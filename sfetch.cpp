@@ -36,6 +36,8 @@
 #define KWHT  "\x1B[37m"
 
 int main() {
+	// disable connection with C
+	std::ios_base::sync_with_stdio(false);
 	// print ascii logo
         std::cout << R"(
                   ___
