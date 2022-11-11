@@ -11,7 +11,7 @@ for the next release v1.1.0
 - [ ] Make sfetch support BSD/Unix and their ascii systems (if possible)
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
-There's no binary file included that runs for every single distro so the "OS: " just prints desc of the OS which is maybe the name of the OS.
+There's no binary file included that runs for every single distro so the "OS: " just prints "Linux"
 
 sfetch is a simple and minimal system information tool written in `C++`.
 
