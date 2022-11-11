@@ -55,7 +55,7 @@ int main() {
 
             char username[MAX_USERID_LENGTH];
             cuserid(username);
-            std::cout << " " << username;
+            std::cout << "" << username;
             std::cout << "@" << u.nodename;
             std::cout << "\n";
             std::cout << "OS: " << u.sysname;
@@ -63,11 +63,11 @@ int main() {
             char path[1035];
             fp = popen("/usr/bin/lsb_release --short -d", "r");
             if (fp == NULL) {
-            std::cout << " " << '\n';
+            std::cout << "" << '\n';
             exit(1);
 }
             while (fgets(path, sizeof(path), fp) != NULL) {
-            std::cout << " ", path;
+            std::cout << "", path;
 }
 
             pclose(fp);
