@@ -1,6 +1,6 @@
-// WARNING: THIS FILE IS THE CODE OF SIMPLEFETCH!
-// DO NOT EDIT IT UNLESS YOU KNOW WHAT ARE YOU DOING!
-
+// This is the code of sfetch.
+// See license at LICENSE file.
+// You can modify ANY code here. but not put some malicious code
 #include <stdio.h>
 #include <sys/utsname.h>
 #include <iostream>
