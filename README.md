@@ -1,16 +1,24 @@
 <p align="center">
-  <b>simplefetch (gonna be renamed to sfetch), a simple and minimal system information tool. </b><br>
+  <b>sfetch (prev simplefetch), a simple and minimal system information tool. </b><br>
   <br><br>
   <img src="https://github.com/omxr4216/simplefetch/blob/main/assets/asset.png?raw=true">
 </p>
 
-simplefetch (aka sfetch) is a simple and minimal system information tool written in C++.
+sfetch (prev simplefetch) is a simple and minimal system information tool written in C++.
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
-### simplefetch is being renamed to sfetch. the optional tar.xz file is still simplefetch. the c++ filename is still simplefetch. and as you launch the gui installer it still says simplefetch.
 
 ## Install
+Make sure you have the  /usr/local/bin/ directory
+```
+ls /usr/local/bin
+```
+if it doesn't exist make the directory.
+```
+sudo mkdir /usr/local/bin
+```
+
 Clone this repo. (or download the .tar.xz file from releases)
 ```
 git clone https://github.com/omxr4216/sfetch
