@@ -15,3 +15,10 @@ You can get the source code by downloading the tar.xz archive or using `git clon
 Requirements: https://github.com/omxr4216/sfetch/wiki/Requirements
 
 Install: https://github.com/omxr4216/sfetch/wiki/Install
+
+## Contributors 
+
+In order to maintain code consistency, please run
+```
+clang-format -i *.cpp
+```
