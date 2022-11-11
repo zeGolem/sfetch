@@ -19,12 +19,15 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
+
 #include <ctime>
 #include <iostream>
 #include <stdio.h>
 #include <sys/utsname.h>
+
 // define userid length
 #define MAX_USERID_LENGTH 32
+
 // define colors
 #define KNRM "\x1B[0m"
 #define KRED "\x1B[31m"
@@ -38,6 +41,7 @@
 int main() {
 	// disable connection with C
 	std::ios_base::sync_with_stdio(false);
+
 	// print ascii logo
 	std::cout << R"(
                   ___
@@ -48,50 +52,40 @@ int main() {
               _/\ __)/_)
               \/-____\/
         )" << '\n';
+
 	// print username,nodename (aka hostname), os name (man it's really big)
 	struct utsname u;
-
 	uname(&u);
 
 	char username[MAX_USERID_LENGTH];
 	cuserid(username);
-	std::cout << "" << username;
-	std::cout << "@" << u.nodename;
-	std::cout << "\n";
-	std::cout << "OS: " << u.sysname;
-	FILE* fp;
-	char path[1035];
-	fp = popen("/usr/bin/lsb_release --short -d", "r");
-	pclose(fp);
+
+	std::cout << "" << username << "@" << u.nodename << "\n";
+	std::cout << "OS: " << u.sysname << "\n";
 
 	// print version, time/date, shell , terminal, and the colors
-	std::cout << "\n";
-	std::cout << "Version: " << u.release;
-	std::cout << "\n";
-	std::cout << "Time/Date: ";
-	std::time_t result = std::time(nullptr);
-	std::cout << std::asctime(std::localtime(&result));
-	std::cout << "Platform: " << u.machine;
+	std::cout << "Version: " << u.release << "\n";
+
+	std::time_t current_time = std::time(nullptr);
+	std::cout << "Time/Date: " << std::asctime(std::localtime(&current_time));
+
+	std::cout << "Platform: " << u.machine << "\n";
+
 	char* shell = getenv("SHELL");
-	std::cout << "\n";
-	std::cout << "Shell: " << shell;
+	std::cout << "Shell: " << shell << "\n";
+
 	char* term = getenv("TERM");
-	std::cout << "\n";
-	std::cout << "Terminal: " << term;
-	std::cout << "\n";
+	std::cout << "Terminal: " << term << "\n";
+
 	char* desktop = getenv("DESKTOP_SESSION");
-	std::cout << "Desktop: " << desktop;
+	std::cout << "Desktop: " << desktop << "\n";
+
 	std::cout << "\n";
-	std::cout << "\n";
-	std::cout << "██" << KRED;
-	std::cout << "██" << KYEL;
-	std::cout << "██" << KGRN;
-	std::cout << "██" << KBLU;
-	std::cout << "██" << KCYN;
-	std::cout << "██" << KMAG;
-	std::cout << "██" << KWHT;
-	std::cout << "██\n" << KNRM;
-	std::cout << "\n";
+
+	std::cout << "██" << KRED << "██" << KYEL << "██" << KGRN << "██" << KBLU
+	          << "██" << KCYN << "██" << KMAG << "██" << KWHT << "██\n"
+	          << KNRM << "\n";
+
 	// exits simplefetch
 	return 0;
 }
