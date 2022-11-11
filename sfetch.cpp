@@ -55,7 +55,8 @@ int main() {
 
             char username[MAX_USERID_LENGTH];
             cuserid(username);
-            std::cout << "sfetch@sfetch";
+            std::cout << "" << username; 
+            std::cout << "" << u.nodename;
             std::cout << "\n";
             std::cout << "OS: ";
             FILE *fp;
