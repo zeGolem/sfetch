@@ -10,7 +10,11 @@ gui:
 
 install:
 	@g++ sfetch.cpp -o sfetch
+	@g++ sfetch-updater.cpp -o sfetch-updater
+	@install -Dm755 sfetch-updater $(PREFIX)/local/bin/sfetch-updater
 	@install -Dm755 sfetch $(PREFIX)/local/bin/sfetch
+	@mkdir /usr/share/sfetch/
+	@touch /usr/share/sfetch/version-1.0.2
 	@echo Done!
 
 uninstall:
@@ -21,7 +25,13 @@ uninstall:
 reinstall:
 	@echo Reinstalling sfetch..
 	@rm -rf $(PREFIX)/local/bin/sfetch
+	@rm -rf $(PREFIX)/share/sfetch/version-1.0.2
+	@rm -rf $(PREFIX)/share/sfetch/
 	@rm -rf ./sfetch
-	@g++ simplefetch.cpp -o simplefetch
-	@install -Dm755 simplefetch $(PREFIX)/local/bin/sfetch
+	@g++ sfetch.cpp -o sfetch
+	@g++ sfetch-updater.cpp -o sfetch-updater
+	@install -Dm755 sfetch $(PREFIX)/local/bin/sfetch
+	@install -Dm755 sfetch-updater $(PREFIX)/local/bin/sfetch-updater
+	@mkdir /usr/share/sfetch
+	@touch /usr/share/sfetch/version-1.0.2
 	@echo Done!
