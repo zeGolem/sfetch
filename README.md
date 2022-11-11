@@ -4,7 +4,11 @@
 <img src="https://github.com/omxr4216/sfetch/blob/main/screenshot.png?raw=true">
 </p>
 
-
+for the next release v1.1.0
+- [ ] Modify chkversion.sh to make sfetch-update output: "New update is available!"
+- [ ] Add more colors
+- [ ] Create patch files (instead of having to copy new code to custom config file)
+- [ ] Make sfetch support BSD/Unix and their ascii systems (if possible)
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
 There's no binary file included that runs for every single distro so the "OS: " just prints desc of the OS which is maybe the name of the OS.
