@@ -41,9 +41,11 @@ Clone this repo. (or download the .tar.xz file from releases)
 ```
 git clone https://github.com/omxr4216/sfetch
 ```
-
 NOTE: the repo might have bug fixes that are NOT in the tar.xz file
-
+If you want to install the "testing" version cd into sfetch-testing first.
+```
+cd sfetch-testing
+```
 List options.
 ```
 make
