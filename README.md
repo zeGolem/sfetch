@@ -1,13 +1,13 @@
 <p align="center">
   <b>sfetch. a simple and minimal system information tool.</b><br>
   <br><br>
-<img src="https://github.com/omxr4216/sfetch/blob/main/asset.png?raw=true">
+<img src="https://github.com/omxr4216/sfetch/blob/main/ss.png?raw=true">
 </p>
 
 
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
-There's no binary file included that runs for every single distro so the "OS: " might print "Linux" or the desc of the OS which is maybe the name of the OS.
+There's no binary file included that runs for every single distro so the "OS: " just prints desc of the OS which is maybe the name of the OS.
 
 sfetch is a simple and minimal system information tool written in `C++`.
 
