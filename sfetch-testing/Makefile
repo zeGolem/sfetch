@@ -11,8 +11,8 @@ gui:
 
 install:
 	@cd src
-	@g++ sfetch.cpp -o sfetch
-	@g++ sfetch-updater.cpp -o sfetch-updater
+	@g++ config.cpp -o sfetch
+	@g++ config-updater.cpp -o sfetch-updater
 	@install -Dm755 sfetch-updater $(PREFIX)/local/bin/sfetch-updater
 	@install -Dm755 sfetch $(PREFIX)/local/bin/sfetch
 	@mkdir /usr/share/sfetch/
@@ -32,8 +32,8 @@ reinstall:
 	@rm -rf $(PREFIX)/share/sfetch/version-1.1.0
 	@rm -rf $(PREFIX)/share/sfetch/
 	@rm -rf ./sfetch
-	@g++ sfetch.cpp -o sfetch
-	@g++ sfetch-updater.cpp -o sfetch-updater
+	@g++ config.cpp -o sfetch
+	@g++ config-updater.cpp -o sfetch-updater
 	@install -Dm755 sfetch $(PREFIX)/local/bin/sfetch
 	@install -Dm755 sfetch-updater $(PREFIX)/local/bin/sfetch-updater
 	@mkdir /usr/share/sfetch
