@@ -1,12 +1,15 @@
 <p align="center">
-  <b>sfetch (prev simplefetch), a simple and minimal system information tool. </b><br>
+  <b>sfetch. a simple and minimal system information tool.</b><br>
   <br><br>
-  <img src="https://github.com/omxr4216/sfetch/blob/main/asset.png?raw=true">
+<img src="https://github.com/omxr4216/sfetch/blob/main/asset.png?raw=true">
 </p>
 
-sfetch (prev simplefetch) is a simple and minimal system information tool written in C++.
 
-You can get the source code by downloading the tar.xz archive or using git clone command.
+
+
+sfetch is a simple and minimal system information tool written in `C++`.
+
+You can get the source code by downloading the tar.xz archive or using `git clone` command.
 
 ## Update
 To check for updates for sfetch run this command:
