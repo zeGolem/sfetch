@@ -58,3 +58,13 @@ sudo make gui
 ```
 
 ASCII logos are from [ufetch](https://gitlab.com/jschx/ufetch)
+
+## Contributors
+
+In order to maintain code consistency, please run
+
+```console
+ $ clang-format -i *.cpp
+```
+
+before committing anything
