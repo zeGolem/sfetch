@@ -8,6 +8,10 @@ sfetch (prev simplefetch) is a simple and minimal system information tool writte
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
+## AUR
+
+it's coming soon
+
 [NEW] if you wanted to reinstall sfetch run this command.
 ```
 sudo make reinstall
@@ -26,6 +30,9 @@ Clone this repo. (or download the .tar.xz file from releases)
 ```
 git clone https://github.com/omxr4216/sfetch
 ```
+
+NOTE: the repo might have bug fixes that are NOT in the tar.xz file
+
 List options.
 ```
 make
