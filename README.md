@@ -8,8 +8,11 @@ sfetch (prev simplefetch) is a simple and minimal system information tool writte
 
 You can get the source code by downloading the tar.xz archive or using git clone command.
 
-i won't release sfetch for the AUR
-
+## Update
+To check for updates for sfetch run this command:
+```
+sfetch-update
+```
 ## Install
 if you wanted to reinstall sfetch run this command.
 ```
