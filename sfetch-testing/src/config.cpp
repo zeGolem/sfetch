@@ -70,45 +70,39 @@ int main() {
  	 \___/|_| \_|___/_/\_\
 	 )" << '\n';
 	#endif
-	// print username,nodename (aka hostname), os name (man it's really big)
-	    struct utsname u;
+	struct utsname u;
+	uname(&u);
 
-            uname(&u);
+	char username[MAX_USERID_LENGTH];
+	cuserid(username);
+        // print os and username.
+	std::cout << "" << username << "@" << u.nodename << "\n";
+	std::cout << "OS: " << u.sysname << "\n";
 
-            char username[MAX_USERID_LENGTH];
-            cuserid(username);
-            std::cout << "" << username; 
-            std::cout << "" << u.nodename;
-            std::cout << "\n";
-            std::cout << "OS: " << u.sysname;
 	// print version, time/date, shell , terminal, and the colors
-            std::cout << "\n";
-            std::cout << "Version: " << u.release;
-            std::cout << "\n";
-            std::cout << "Time/Date: ";
-            std::time_t result = std::time(nullptr);
-            std::cout << std::asctime(std::localtime(&result));
-            std::cout << "Platform: " << u.machine;
-            char*shell = getenv("SHELL");
-            std::cout << "\n";
-            std::cout << "Shell: " << shell;
-            char*term = getenv("TERM");
-	    std::cout << "\n";
-            std::cout << "Terminal: " << term;
-            std::cout << "\n";
-            char*desktop = getenv("DESKTOP_SESSION");
-            std::cout << "Desktop: " << desktop;
-            std::cout << "\n";
-	    std::cout << "\n";
-            std::cout << "██" << KRED;
-            std::cout << "██" << KYEL;
-            std::cout << "██" << KGRN;
-            std::cout << "██" << KBLU;
-            std::cout << "██" << KCYN;
-            std::cout << "██" << KMAG;
-            std::cout << "██" << KWHT;
-            std::cout << "██\n" << KNRM;
-	    std::cout << "\n";
+	std::cout << "Version: " << u.release << "\n";
+
+	std::time_t current_time = std::time(nullptr);
+	std::cout << "Time/Date: " << std::asctime(std::localtime(&current_time));
+
+	std::cout << "Platform: " << u.machine << "\n";
+
+	char* shell = getenv("SHELL");
+	std::cout << "Shell: " << shell << "\n";
+
+	char* term = getenv("TERM");
+	std::cout << "Terminal: " << term << "\n";
+
+	char* desktop = getenv("DESKTOP_SESSION");
+	std::cout << "Desktop: " << desktop << "\n";
+
+	std::cout << "\n";
+
+	std::cout << "██" << KRED << "██" << KYEL << "██" << KGRN << "██" << KBLU
+	          << "██" << KCYN << "██" << KMAG << "██" << KWHT << "██\n"
+	          << KNRM << "\n";
+
 	// exits simplefetch
-            return 0;
+	return 0;
+}
 }
