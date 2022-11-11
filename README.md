@@ -12,12 +12,11 @@ You can get the source code by downloading the tar.xz archive or using git clone
 
 it's coming soon
 
-[NEW] if you wanted to reinstall sfetch run this command.
+## Install
+if you wanted to reinstall sfetch run this command.
 ```
 sudo make reinstall
 ```
-
-## Install
 Make sure you have the  /usr/local/bin/ directory
 ```
 ls /usr/local/bin
