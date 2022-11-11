@@ -58,14 +58,7 @@ int main() {
             std::cout << "" << username; 
             std::cout << "" << u.nodename;
             std::cout << "\n";
-            std::cout << "OS: ";
-            std::string getOsName()
-	    {
-		#elif __linux__
-    		return "Linux";
-		#elif __unix || __unix__
-    		return "Unix";
-
+            std::cout << "OS: " << u.sysname;
 	// print version, time/date, shell , terminal, and the colors
             std::cout << "\n";
             std::cout << "Version: " << u.release;
