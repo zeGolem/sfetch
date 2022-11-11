@@ -57,7 +57,7 @@ int main() {
             cuserid(username);
             std::cout << "sfetch@sfetch";
             std::cout << "\n";
-            std::cout << "OS: " << u.sysname;
+            std::cout << "OS: ";
             FILE *fp;
             char path[1035];
             fp = popen("/usr/bin/lsb_release --short -d", "r");
