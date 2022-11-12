@@ -6,7 +6,7 @@
 
 
 You might be wondering. "Why doesn't sfetch determine OS names?"
-There's no binary file included that runs for every single distro so the "OS: " just prints "Linux"
+There's no binary file included that runs for every single distro so the "OS: " just prints "Linux" (on shell edition it's the distro name)
 
 sfetch is a simple and minimal system information tool written in `C++`. it displays info about your system. some things like the time, kernel version, and the shell/desktop. 
 
@@ -16,8 +16,9 @@ Requirements: https://github.com/omxr4216/sfetch/wiki/Requirements
 
 Install: https://github.com/omxr4216/sfetch/wiki/Install
 
-
-
+## sfetch shell edition
+I created this because there was alot of ppl demanding to make this project a shell script. and also ppl complaining about this being writen on C++ or 
+wrapped into C++.
 
 ## Contributors 
 
