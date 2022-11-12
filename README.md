@@ -16,9 +16,9 @@ Requirements: https://github.com/omxr4216/sfetch/wiki/Requirements
 
 Install: https://github.com/omxr4216/sfetch/wiki/Install
 
-## Hate comments about "wrapping"
-I've seen some hate comments about the app written in C++ and the script being wrapped from bash.
-For this ima make sfetch shell edition.
+
+
+
 ## Contributors 
 
 In order to maintain code consistency, please run
