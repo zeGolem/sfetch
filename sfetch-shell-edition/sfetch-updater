@@ -1,0 +1,4 @@
+exec "git clone -q https://github.com/omxr4216/sfetch $HOME/sfetch"
+exec "chmod +x $HOME/sfetch/chkversion.sh"
+exec "chmod +x $HOME/sfetch/src/chkversion.sh"
+exec "exec $HOME/sfetch/chkversion.sh"
