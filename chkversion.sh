@@ -1,4 +1,4 @@
-FILE=/usr/share/sfetch/version-1.0.2
+FILE=/usr/share/sfetch/version-1.1.0
 if test -f "$FILE"; then
         echo "You're up to date!"
 else
