@@ -1,8 +1,7 @@
 PREFIX ?= /usr
 
-all:
-	@echo You have 4 options:
-	@echo gui -- Executes the GUI Installer and installs sfetch
+options:
+	@echo You have 3 options:
 	@echo install -- Installs sfetch directly.
 	@echo uninstall -- Uninstalls sfetch.
 	@echo reinstall -- Reinstalls sfetch.
