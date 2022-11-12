@@ -102,7 +102,7 @@ int main() {
 	          << "██" << KCYN << "██" << KMAG << "██" << KWHT << "██\n"
 	          << KNRM << "\n";
 
-	// exits simplefetch
+	// exits sfetch
 	return 0;
 }
 }
