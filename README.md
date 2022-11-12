@@ -20,5 +20,5 @@ Install: https://github.com/omxr4216/sfetch/wiki/Install
 
 In order to maintain code consistency, please run
 ```
-clang-format -i *.cpp
+$ clang-format -i *.cpp
 ```
