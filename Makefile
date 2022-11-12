@@ -6,8 +6,6 @@ all:
 	@echo install -- Installs sfetch directly.
 	@echo uninstall -- Uninstalls sfetch.
 	@echo reinstall -- Reinstalls sfetch.
-gui:
-	bash .dialog.sh
 
 install:
 	@cd src
