@@ -1,0 +1,30 @@
+#!/bin/bash
+
+Black='\033[0;30m'
+Red='\033[0;31m'
+Green='\033[0;32m'
+Yellow='\033[0;33m'
+Blue='\033[0;34m'
+Purple='\033[0;35m'
+Cyan='\033[0;36m'
+White='\033[0;37m'
+		echo "
+                  ___	
+	         (.. \\n
+                 (<> |\n	
+                //  \ \\n
+               ( |  | /|\n
+              _/\ __)/_)
+              \/-____\/
+		      "
+echo "$USER@$HOSTNAME"
+echo OS: $(lsb_release -rsa)
+echo Version: $(uname -r)
+echo Date: $(date)
+echo Platform: $(uname -m)
+echo Shell: $SHELL
+echo Terminal: $TERM
+echo Desktop: $DESKTOP_SESSION
+echo " "
+echo -e "${White}██${Red}██${Yellow}██${Green}██${Blue}██${Cyan}██${Purple}██${White}██"
+echo " "
