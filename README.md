@@ -12,13 +12,12 @@ sfetch is a simple and minimal system information tool written in `C++`. it disp
 
 You can get the source code by downloading the tar.xz archive or using `git clone` command.
 
+You might be wondering the sfetch-shell-edition folder it's basically sfetch but written in bash.
+
 Requirements: https://github.com/omxr4216/sfetch/wiki/Requirements
 
 Install: https://github.com/omxr4216/sfetch/wiki/Install
 
-## sfetch shell edition
-I created this because there was alot of ppl demanding to make this project a shell script. and also ppl complaining about this being writen on C++ or 
-wrapped into C++.
 
 ## Contributors 
 
